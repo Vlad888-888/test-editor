@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event)
     window.onload = function() {   loadwind(); }
 });
 
-function loadwind(){ console.log(window.location.pathname)   
+function loadwind(){ 
     if(window.location.pathname.indexOf("index.php")>=0 || window.location.pathname == '/'){ setInterval("reload_img()", 14998);} //
 }
 
@@ -22,7 +22,7 @@ else
 if( document.getElementById("objinfo8").style.opacity <= 0.1 ){
     document.getElementById("objinfo8").style.opacity = 0; ShowTimer = setInterval("clier_filter_img()", 10); ShowCounter=10;
 }
-console.log(window.location.pathname)
+//console.log(window.location.pathname)
 return false;
 }
 
