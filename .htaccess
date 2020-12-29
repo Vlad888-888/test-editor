@@ -1,0 +1,41 @@
+#Options -Indexes
+Options All -Indexes
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# Перенаправлять заблокированные запросы
+#RewriteRule .* index.php [F]
+# и запрошенный путь не соответствует пути к физическому файлу
+#RewriteCond %{REQUEST_FILENAME} !-f
+# и запрошенный путь не соответствует пути к физической папке
+#RewriteCond %{REQUEST_FILENAME} !-d
+# то перенаправить запрос на скрипт index.php
+
+RewriteCond %{REQUEST_URI} !query.php$
+RewriteRule .*.php index.php
+</IfModule>
+
+#RewriteCond %{HTTP_REFERER} .
+#RewriteCond %{HTTP_REFERER} !^http://([^.]+\.)?site\. [NC]
+#RewriteCond %{HTTP_REFERER} !google\. [NC]
+#RewriteCond %{HTTP_REFERER} !search\?q=cache [NC]
+#RewriteCond %{HTTP_REFERER} !msn\. [NC]
+#RewriteCond %{HTTP_REFERER} !yahoo\. [NC]
+#RewriteCond %{REQUEST_URI} !^/hotlinker\.gif$
+#RewriteRule \.(gif|jpg|png)$ /hotlinker.gif [NC,L]
+
+# ошибка сервера, неверный запрос
+#ErrorDocument 400 /shablon-rus.php
+
+# неавторизован
+#ErrorDocument 401 /shablon-rus.php
+
+# вход запрещён
+#ErrorDocument 403 /forbid.html
+
+# самая распространённая - страница не найдена
+ErrorDocument 404 /kost.php
+
+# внутренняя ошибка сервера
+#ErrorDocument 500 /serverr.html

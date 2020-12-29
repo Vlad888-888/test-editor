@@ -1,5 +1,5 @@
 <?php
-$html='<html >
+$html='<!DOCTYPE html>
 ';
 $head_data='<head>
 <title></title>
@@ -10,60 +10,22 @@ $head_data='<head>
 </head>
 <body >
 ';
-$script='<script src="writes-page/js/jquery/jquery.js"  type="text/javascript"></script><script src="writes-page/js/jquery/ifx.js"     type="text/javascript"></script><script src="writes-page/js/jquery/idrop.js"   type="text/javascript"></script><script src="writes-page/js/jquery/idrag.js"   type="text/javascript"></script><script src="writes-page/js/jquery/iutil.js"   type="text/javascript"></script><script src="writes-page/js/jquery/islider.js" type="text/javascript"></script><script src="writes-page/js/jquery/color_picker/color_picker.js" type="text/javascript"></script><link  href="writes-page/js/jquery/color_picker/color_picker.css" rel="stylesheet" type="text/css">
-
-<script type="text/javascript">
-$( window ).resize(function() {
-  
-});
-$( window ).load(function() {
-  
-});
-
-$("div").hover(
-function(){
-  if( $(this).attr("bgimag")=="sotcseti" ){ $(this).css("background-image", $(this).css("background-image").replace("-off.png", "-on.png"));}
-},
-function(){
-  if( $(this).attr("bgimag")=="sotcseti" ){  $(this).css("background-image", $(this).css("background-image").replace("-on.png", "-off.png"));}
-});
-
-$("div").click(function(){
-  if( $(this).css("background-image").indexOf("facebook")>0 ){window.open("https://www.facebook.com/europlanetatv");}
-  else
-  if( $(this).css("background-image").indexOf("tvitter")>0 ){window.open("https://twitter.com/europlanetatv");}
-  else
-  if( $(this).css("background-image").indexOf("vk-")>0 ){window.open("https://vk.com/id287204942");}
-  else
-  if( $(this).css("background-image").indexOf("shar.")>0 ){window.location = "index.php";}
-});
-
-function callback(){
-document.getElementById("objinfo100").style.visibility="visible";
-//document.getElementById("objinfo100").style.display="block";visibility:hidden
-return false;
-}
-function sendcallback(ind){
-document.getElementById("objinfo100").style.visibility="hidden";
-//document.getElementById("objinfo100").style.display="none";
-return false;
-}
-';
+$script='';
 $wl=' style="width:1200px;height:700px;border-width:0px;border-style:dashed;overflow: auto;position: absolute;left:50%;top: 50%;transform: translate(-50%, -50%);"';
 $page_info='
 <div id="objinfo0" name="objinfo0" class="objinfo" style="position: absolute; top: 695px; left: 715px; height: 25px; width: 25px; z-index: 1023; display: none; background-color: transparent; background-image: url(&quot;img-upload/skype-off.png&quot;); border-style: none; border-color: transparent; background-size: cover;"></div>
 
-<div id="objinfo1" name="objinfo1" style="position: absolute; top: 1px; left: 1px; height: 160px; width: 160px; z-index: 1008; display: block; background-color: transparent; background-image: url(&quot;img-upload/shar.png&quot;); border-style: none; border-color: transparent; background-size: cover;"></div>
+<div id="objinfo1" name="objinfo1" style="position: absolute; top: 14px; left: -10px; height: 200px; width: 200px; z-index: 1008; display: block; background-color: transparent; background-image: url(&quot;img-upload/logo.png&quot;); border-style: none; border-color: transparent; background-size: contain; background-repeat: no-repeat;"></div>
 
-<div id="objinfo2" name="objinfo2" style="position: absolute; top: 20px; left: 154px; height: 20px; width: 400px; z-index: 1002; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.4em;color:#192492;font-weight:normal;" face="Noto Sans">Travel business agency</font></div>
+<div id="objinfo2" name="objinfo2" style="position: absolute; top: 20px; left: 154px; height: 20px; width: 400px; z-index: 1002; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.4em;color:#192492;font-weight:normal;" face="Noto Sans">xxxxx xxxxx xxxxx</font></div>
 
-<div id="objinfo3" name="objinfo3" style="position: absolute; top: 50px; left: 171px; height: 50px; width: 500px; z-index: 1003; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;"><font style="font-size:4.8em;color:#192492;font-weight:bold;" face="Noto Sans">EUROPLANETA</font></div>
+<div id="objinfo3" name="objinfo3" style="position: absolute; top: 50px; left: 171px; height: 50px; width: 500px; z-index: 1003; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;"><font style="font-size:4.8em;color:#192492;font-weight:bold;" face="Noto Sans">XXXXXXXXXXX</font></div>
 
 <div id="objinfo4" name="objinfo4" style="position: absolute; top: 7px; left: 1140px; height: 25px; width: 50px; z-index: 1004; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.2em; background-image: url(&quot;img-upload/none&quot;);"><a href="index.php?LangIndex=rus" class="butt" style="width:40px;border-radius:6px;">rus</a></div>
 
-<div id="objinfo5" name="objinfo5" style="position: absolute; top: 104px; left: 1037px; height: 20px; width: 150px; z-index: 1005; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.5em; background-image: url(&quot;img-upload/none&quot;);"><a href="user_account.php" target="blank" class="butt" style="width:150px;border-radius:6px;">user account</a></div>
+<div id="objinfo5" name="objinfo5" style="position: absolute; top: 104px; left: 1037px; height: 20px; width: 150px; z-index: 1005; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.5em; background-image: url(&quot;img-upload/none&quot;);"><a href="user_account---eng.php" class="butt" style="width:150px;border-radius:6px;">user account</a></div>
 
-<div id="objinfo6" name="objinfo6" style="position: absolute; top: 0px; left: 688px; height: 20px; width: 300px; z-index: 1006; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.8em;color:#192492;font-weight:normal;" face="Noto Sans">+7 495 983 0007</font></div>
+<div id="objinfo6" name="objinfo6" style="position: absolute; top: 0px; left: 688px; height: 20px; width: 300px; z-index: 1006; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.8em;color:#192492;font-weight:normal;" face="Noto Sans">+7 495 xxx xxxx</font></div>
 
 <div id="objinfo7" name="objinfo7" style="position: absolute; top: 136px; left: 1px; height: 540px; width: 1199px; z-index: 1007; display: block; background-color: rgb(255, 255, 255); background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"></div>
 

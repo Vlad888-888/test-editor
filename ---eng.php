@@ -1,9 +1,8 @@
 <?php
-$html='<html >
-';
+$html='<!DOCTYPE html>';
 $head_data='<head>
 <title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Caveat:400,700|Noto+Sans:400,400i,700,700i|Play:400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -13,45 +12,45 @@ $head_data='<head>
 $script='';
 $wl=' style="width:1200px;height:700px;border-width:0px;border-style:dashed;overflow: auto;position: absolute;left:50%;top: 50%;transform: translate(-50%, -50%);"';
 $page_info='
-<div id="objinfo0" name="objinfo0" class="objinfo" style="position: absolute; top: 211px; left: 16px; height: 420px; width: 1199px; z-index: 1028; display: none; background-color: rgb(199, 197, 197); border-style: none; border-color: transparent; background-image: url(&quot;img-upload/none&quot;);"></div>
+<div id="objinfo0" name="objinfo0" class="objinfo" style="position: absolute; top: 211px; left: 16px; height: 420px; width: 1199px; z-index: 1028; display: none; background-color: rgb(199, 197, 197); border-style: none; border-color: transparent; background-image: none;"></div>
 
-<div id="objinfo1" name="objinfo1" style="position: absolute; top: 1px; left: 1px; height: 160px; width: 160px; z-index: 1008; display: block; background-color: transparent; background-image: url(&quot;img-upload/shar.png&quot;); border-style: none; border-color: transparent; background-size: cover;"></div>
+<div id="objinfo1" name="objinfo1" style="position: absolute; top: 14px; left: -10px; height: 200px; width: 200px; z-index: 1008; display: block; background-color: transparent; background-image: url(&quot;img-upload/logo.png&quot;); border-style: none; border-color: transparent; background-size: contain; background-repeat: no-repeat;"></div>
 
-<div id="objinfo2" name="objinfo2" style="position: absolute; top: 20px; left: 154px; height: 20px; width: 400px; z-index: 1002; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.4em;color:#192492;font-weight:normal;" face="Noto Sans">Travel business agency</font></div>
+<div id="objinfo2" name="objinfo2" style="position: absolute; top: 20px; left: 154px; height: 20px; width: 400px; z-index: 1002; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent;"><font style="font-size:2.4em;color:#192492;font-weight:normal;" face="Noto Sans">xxxxx xxxxx xxxxxx</font></div>
 
-<div id="objinfo3" name="objinfo3" style="position: absolute; top: 50px; left: 171px; height: 50px; width: 500px; z-index: 1003; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;"><font style="font-size:4.8em;color:#192492;font-weight:bold;" face="Noto Sans">EUROPLANETA</font></div>
+<div id="objinfo3" name="objinfo3" style="position: absolute; top: 50px; left: 171px; height: 50px; width: 500px; z-index: 1003; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;"><font style="font-size:4.8em;color:#192492;font-weight:bold;" face="Noto Sans">XXXXXXXXXXXX</font></div>
 
-<div id="objinfo4" name="objinfo4" style="position: absolute; top: 7px; left: 1140px; height: 25px; width: 50px; z-index: 1004; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.2em; background-image: url(&quot;img-upload/none&quot;);"><a href="index.php?LangIndex=rus" class="butt" style="width:40px;border-radius:6px;">rus</a></div>
+<div id="objinfo4" name="objinfo4" style="position: absolute; top: 7px; left: 1140px; height: 25px; width: 50px; z-index: 1004; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.2em; background-image: none;"><a href="index.php?LangIndex=rus" class="butt" style="width:40px;border-radius:6px;">rus</a></div>
 
-<div id="objinfo5" name="objinfo5" style="position: absolute; top: 104px; left: 1037px; height: 20px; width: 150px; z-index: 1005; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.5em; background-image: url(&quot;img-upload/none&quot;);"><a href="user_account.php" target="blank" class="butt" style="width:150px;border-radius:6px;">user account</a></div>
+<div id="objinfo5" name="objinfo5" style="position: absolute; top: 104px; left: 1037px; height: 20px; width: 150px; z-index: 1005; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 10px; line-height: 1.5em; background-image: none;"><a href="user_account---eng.php" class="butt" style="width:150px;border-radius:6px;">user account</a></div>
 
-<div id="objinfo6" name="objinfo6" style="position: absolute; top: 0px; left: 688px; height: 20px; width: 300px; z-index: 1006; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"><font style="font-size:2.8em;color:#192492;font-weight:normal;" face="Noto Sans">+7 495 983 0007</font></div>
+<div id="objinfo6" name="objinfo6" style="position: absolute; top: 0px; left: 688px; height: 20px; width: 300px; z-index: 1006; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent;"><font style="font-size:2.8em;color:#192492;font-weight:normal;" face="Noto Sans">+7 495 xxx xxxx</font></div>
 
-<div id="objinfo7" name="objinfo7" style="position: absolute; top: 136px; left: 1px; height: 540px; width: 1199px; z-index: 1007; display: block; background-color: rgb(255, 255, 255); background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent;"></div>
+<div id="objinfo7" name="objinfo7" style="position: absolute; top: 136px; left: 1px; height: 540px; width: 1199px; z-index: 1007; display: block; background-color: rgb(255, 255, 255); background-image: none; border-style: none; border-color: transparent;"></div>
 
 <div id="objinfo8" name="objinfo8" style="position: absolute; top: 196px; left: 1px; height: 420px; width: 1199px; z-index: 1008; display: block; background-color: rgb(199, 197, 197); border-style: none; border-color: transparent; background-image: url(&quot;img-upload/001.jpg&quot;); stroke: none; background-repeat: no-repeat; background-size: 100% 100%; background-position: 100% 100%; opacity: 1;"></div>
 
-<div id="objinfo9" name="objinfo9" style="position: absolute; top: 170px; left: 38px; height: 20px; width: 150px; z-index: 1009; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="air_tickets---rus.php">AIRTICKETS</a></div>
+<div id="objinfo9" name="objinfo9" style="position: absolute; top: 170px; left: 38px; height: 20px; width: 150px; z-index: 1009; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="air_tickets---rus.php">AIRTICKETS</a></div>
 
-<div id="objinfo10" name="objinfo10" style="position: absolute; top: 170px; left: 280px; height: 20px; width: 132px; z-index: 1010; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="railway_tickets---rus.php">TRAIN TICKETS</a></div>
+<div id="objinfo10" name="objinfo10" style="position: absolute; top: 170px; left: 280px; height: 20px; width: 132px; z-index: 1010; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="railway_tickets---rus.php">TRAIN TICKETS</a></div>
 
-<div id="objinfo11" name="objinfo11" style="position: absolute; top: 170px; left: 500px; height: 20px; width: 132px; z-index: 1011; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="hotels---rus.php">HOTELS</a></div>
+<div id="objinfo11" name="objinfo11" style="position: absolute; top: 170px; left: 500px; height: 20px; width: 132px; z-index: 1011; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="hotels---rus.php">HOTELS</a></div>
 
-<div id="objinfo12" name="objinfo12" style="position: absolute; top: 170px; left: 702px; height: 20px; width: 230px; z-index: 1012; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="transfer---rus.php">TRANSPORT SERVICE</a></div>
+<div id="objinfo12" name="objinfo12" style="position: absolute; top: 170px; left: 702px; height: 20px; width: 230px; z-index: 1012; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="transfer---rus.php">TRANSPORT SERVICE</a></div>
 
-<div id="objinfo13" name="objinfo13" style="position: absolute; top: 170px; left: 1021px; height: 20px; width: 160px; z-index: 1013; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="our_partners---rus.php">OUR PARTNERS</a></div>
+<div id="objinfo13" name="objinfo13" style="position: absolute; top: 170px; left: 1021px; height: 20px; width: 160px; z-index: 1013; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: left;" mnu="firstlevel"><a href="our_partners---rus.php">OUR PARTNERS</a></div>
 
-<div id="objinfo14" name="objinfo14" style="position: absolute; top: 624px; left: 16px; height: 20px; width: 160px; z-index: 1014; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="rest_in_russia_and_abroad---rus.php">LEISURE TRAVEL TO RUSSIA AND ABROAD</a></div>
+<div id="objinfo14" name="objinfo14" style="position: absolute; top: 624px; left: 16px; height: 20px; width: 160px; z-index: 1014; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="rest_in_russia_and_abroad---rus.php">LEISURE TRAVEL TO RUSSIA AND ABROAD</a></div>
 
-<div id="objinfo15" name="objinfo15" style="position: absolute; top: 623px; left: 246px; height: 20px; width: 160px; z-index: 1015; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="visas_to_russia_and_the_cis---rus.php">VISAS TO RUSSIA<br>AND CIS</a></div>
+<div id="objinfo15" name="objinfo15" style="position: absolute; top: 623px; left: 246px; height: 20px; width: 160px; z-index: 1015; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="visas_to_russia_and_the_cis---rus.php">VISAS TO RUSSIA<br>AND CIS</a></div>
 
-<div id="objinfo16" name="objinfo16" style="position: absolute; top: 619px; left: 467px; height: 20px; width: 160px; z-index: 1016; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="vip_halls_at_the_airports---rus.php">VIP HALLS AT THE AIRPORTS</a></div>
+<div id="objinfo16" name="objinfo16" style="position: absolute; top: 619px; left: 467px; height: 20px; width: 160px; z-index: 1016; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="vip_halls_at_the_airports---rus.php">VIP HALLS AT THE AIRPORTS</a></div>
 
-<div id="objinfo17" name="objinfo17" style="position: absolute; top: 618px; left: 684px; height: 20px; width: 250px; z-index: 1017; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="visas_and_passports_for_citizens_of_the_russian_federation---rus.php">VISA AND PASSOPRTS FOR RUSSIAN CITIZENS</a></div>
+<div id="objinfo17" name="objinfo17" style="position: absolute; top: 618px; left: 684px; height: 20px; width: 250px; z-index: 1017; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="visas_and_passports_for_citizens_of_the_russian_federation---rus.php">VISA AND PASSOPRTS FOR RUSSIAN CITIZENS</a></div>
 
-<div id="objinfo18" name="objinfo18" style="position: absolute; top: 631px; left: 1018px; height: 20px; width: 150px; z-index: 1018; display: block; background-color: transparent; background-image: url(&quot;img-upload/none&quot;); border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="contacts---rus.php">CONTACTS</a></div>
+<div id="objinfo18" name="objinfo18" style="position: absolute; top: 631px; left: 1018px; height: 20px; width: 150px; z-index: 1018; display: block; background-color: transparent; background-image: none; border-style: none; border-color: transparent; text-align: center;" mnu="firstlevel"><a href="contacts---rus.php">CONTACTS</a></div>
 
-<div id="objinfo19" name="objinfo19" style="position: absolute; top: 50px; left: 695px; height: 15px; width: 280px; z-index: 1019; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 8px; line-height: 1em; background-image: url(&quot;img-upload/none&quot;);"><a href="#" onclick="callback();" class="butt" style="width:280px;border-radius:6px;">callback</a></div>
+<div id="objinfo19" name="objinfo19" style="position: absolute; top: 50px; left: 695px; height: 15px; width: 280px; z-index: 1019; display: block; background-color: transparent; border-style: none; border-color: rgb(25, 36, 146); border-width: 2px; border-radius: 8px; line-height: 1em; background-image: none;"><a href="#" onclick="callback();" class="butt" style="width:280px;border-radius:6px;">callback</a></div>
 
 <div id="objinfo20" name="objinfo20" style="position: absolute; top: 670px; left: 1000px; height: 25px; width: 25px; z-index: 2000; display: block; background-color: transparent; background-image: url(&quot;img-upload/skype-off.png&quot;); border-style: none; border-color: transparent; background-size: cover; cursor: pointer;" bgimag="sotcseti"></div>
 
@@ -363,7 +362,7 @@ $page_info='
 99
 </div>
 
-<div id="objinfo100" name="objinfo100" style="position: absolute; top: 300px; left: 400px; height: 170px; width: 400px; z-index: 1100; display: block; visibility:hidden; background-color: rgb(255, 255, 255); background-image: url(&quot;img-upload/none&quot;); border-style: solid; border-color: rgb(25, 36, 146); border-width: 20px 1px 1px; text-align: left; padding-left: 3px;"><label>Callback request form</label><br>
+<div id="objinfo100" name="objinfo100" style="position: absolute; top: 300px; left: 400px; height: 170px; width: 400px; z-index: 1100; display: block; visibility:hidden; background-color: rgb(255, 255, 255); background-image: none; border-style: solid; border-color: rgb(25, 36, 146); border-width: 20px 1px 1px; text-align: left; padding-left: 3px;"><label>Callback request form</label><br>
 <br>
 <label class="haderfield" style="top:40px;">Contact details</label><input id="callbackfio" name="callbackfio" class="datafield" style="left:200px;top:40px;"><br>
 <label class="haderfield" style="top:80px;">phone for communication</label><input id="callbackphone" name="callbackphone" class="datafield" style="left:200px;top:80px;"><br>
@@ -371,6 +370,6 @@ $page_info='
 </div>
 
 <!-- end -->
-<input id="ugollt" name="" value="" src="writes-page/image/ugollt.png" alt="close" style="position: absolute; top: 171px; left: -24px; display: none; z-index: 5000;" type="image">
-<input id="ugolrb" name="" value="" src="writes-page/image/ugolrb.png" alt="close" style="position: absolute; top: 616px; left: 1200px; display: none; z-index: 5000;" type="image">';
+<input id="ugollt" name="" value="" src="writes-page/image/ugollt.png" alt="close" style="position: absolute; top: -11px; left: -35px; display: none; z-index: 5000;" type="image">
+<input id="ugolrb" name="" value="" src="writes-page/image/ugolrb.png" alt="close" style="position: absolute; top: 214px; left: 190px; display: none; z-index: 5000;" type="image">';
 ?>

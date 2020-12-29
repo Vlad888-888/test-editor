@@ -301,7 +301,7 @@ function Savefile(ind){
             fjsdata: jsdata,
             fdata: bdata,
             fwl: bwl
-          }).then(data => console.log(data))
+          }).then( data => console.log(data))//console.log(data)
 
     on_off_filemenu();
 }
@@ -310,14 +310,14 @@ function sendURLrequest(metod, url, body = null){
     return new Promise( ( resolve, reject ) => {
        const xhr = new XMLHttpRequest()
        xhr.open(metod, url)
-       xhr.responseType = 'text'
-       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')//
+       xhr.responseType = 'json'
+       //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')//
        xhr.onload = () => { 
            if(xhr.status >= 400){ reject(xhr.response) }
            resolve(xhr.response) 
        }
        xhr.onerror = () => { reject(xhr.response) }
-       xhr.send(JSON.stringify(body));
+       xhr.send(JSON.stringify(body)) 
        })
    }
 ////////////////// 

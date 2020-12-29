@@ -1,23 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event)
 {
-    window.onresize = function() {  };
-    window.onload = function() {   loadwind(); };
+    //window.onresize = function() { console.log( window.location.search) }
+    window.onload = function() {   loadwind(); }
 });
 
-function loadwind(){
-    let surl = window.location.search; 
-    if(surl.length <=0 || surl.indexOf("index.php")>=0){ setInterval("reload_img()", 14998);} //
+function loadwind(){ console.log(window.location.pathname)   
+    if(window.location.pathname.indexOf("index.php")>=0 || window.location.pathname == '/'){ setInterval("reload_img()", 14998);} //
 }
-
-/*
-window.onresize( function() => {});
-    
-window.onload(function() {
-    let surl = window.location.search; 
-    //console.log(surl);
-    if(surl.length <=0 || surl.indexOf("index.php")>=0){ setInterval("reload_img()", 14998);} //
-});
-*/
 
 var ShowCounter=1000;
 var ImgNum=0;
@@ -33,6 +22,7 @@ else
 if( document.getElementById("objinfo8").style.opacity <= 0.1 ){
     document.getElementById("objinfo8").style.opacity = 0; ShowTimer = setInterval("clier_filter_img()", 10); ShowCounter=10;
 }
+console.log(window.location.pathname)
 return false;
 }
 

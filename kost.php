@@ -17,8 +17,9 @@ if($_GET['login'] === 'logout'  && $_SESSION['GL_writer'] === "login"){unset($_S
 else
 if(strlen($_GET['login'])===0 && strlen($_SESSION['GL_writer']) === 0 ){$_SESSION['GL_writer']='user'; $file_info=$_SERVER['REQUEST_URI'];}
 else{ $file_info=$_SERVER['REQUEST_URI'];}
+
 if(strlen($file_info)<2 || strpos($file_info,"index.php")!==FALSE){$file_info='---'.$_SESSION['GL_LangIndex'].'.php';}
-//echo('<br>!'.$file_info);
+//echo('<br>!'.$file_info.' '.$_SERVER['REQUEST_URI']);
 /////////////////
 
 
@@ -40,11 +41,11 @@ if(strpos($file_info,'-')!=FALSE){
    else{$_SESSION['GL_LangIndex']='rus';}
   }
   */
-//echo('<br>('.$file_info.')');
+//echo('<br>>>>>>('.$file_info.')');
 
 if(file_exists($file_info)){include $file_info;}
-  else{ // echo("shablon-".$_SESSION['GL_LangIndex'].".php");
-      if(file_exists("shablon-".$_SESSION['GL_LangIndex'].".php")){include "shablon-".$_SESSION['GL_LangIndex'].".php";}
+  else{  //echo("shablon-".$_SESSION['GL_LangIndex'].".php");
+      if(file_exists("shablon-".$_SESSION['GL_LangIndex'].".php")){include "shablon-".$_SESSION['GL_LangIndex'].".php";} // .htaccess
 	    else{include "writes-page/new.php";}
 	  }	
 
