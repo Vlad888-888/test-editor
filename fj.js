@@ -301,7 +301,7 @@ function Savefile(ind){
             fjsdata: jsdata,
             fdata: bdata,
             fwl: bwl
-          }).then( data => console.log(data))//console.log(data)
+          }).then( data => console.log(data['message']) )
 
     on_off_filemenu();
 }
@@ -312,6 +312,7 @@ function sendURLrequest(metod, url, body = null){
        xhr.open(metod, url)
        xhr.responseType = 'json'
        //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')//
+       xhr.setRequestHeader('Content-Type', 'application/json')//
        xhr.onload = () => { 
            if(xhr.status >= 400){ reject(xhr.response) }
            resolve(xhr.response) 

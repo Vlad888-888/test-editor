@@ -10,6 +10,7 @@ $file_content .= '$wl=\''.str_replace('\"', '"',$input['fwl']).'\';'.chr(13).chr
 $file_content .= '$page_info=\''.chr(13).chr(10).str_replace('\"', '"',trim($input['fdata'])).'\';'.chr(13).chr(10);
 $file_content .= '?>'.chr(13).chr(10);
 
+/*
 //$file_name = '../'.$_POST['fn'];
 $file_name = $input['fn'];
 //сохраняем старый файл
@@ -20,6 +21,7 @@ if (!$filexx0 = fopen($file_name, "w")) {echo("XXXXXXX (".$file_name.")");}
 if (fwrite($filexx0, $file_temp) === FALSE) {echo("XXXXXX (".$entering_nom.")");}
     fclose($filexx0);
 }
+*/
 
 $file_name = $input['fn'];
 
